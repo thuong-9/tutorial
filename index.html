@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<!-- 
-1.h1....h6 : heading
+<!-- thẻ
+1.h1....h6 : heading tiêu đề
 <h1 title > thuộc tính -> attribute
-2.p :paragraph
+2.p :paragraph: văn bản
 3.img :image
 4.a : anchor liên kết
 5.ul, li:unordered list danh sách
+ol : số
 6.table
 7.input
 8.button
 9.div: khối
+pre : tách dòng
+br : ngắt dòng thẻ trống
+hr: đg kẻ ngang
+text-align:center căn chỉnh
  -->
-<html>
+<html lang="en">
     <!--phần đầu-->
     <head>
         <title>meo-shop</title>
         <meta charset="utf-8">
+         <link rel="stylesheet" href="main.css"> 
+        <!-- <style>
+            h1 {
+                color:blue;
+                font-size:50px;
+            }
+        </style> -->
     </head>
     
     <!--phần thân-->
     <body>
         <div>
-            <h1 title="tiêu đề">thương</h1>
+            <h1 title="title" id="one">thương</h1>
+            <h1 title="title" class="two">thương</h1>
+            <h1 style="text-align: end;" title="title" class="two">thương</h1>
+            <hr>
+            <!-- <h1 title="title" style="color:rgba(8, 0, 255, 0.859)">thương</h1> -->
             <input type="text">
             <input type="checkbox">
-            <input name="giới tính" type="radio">
-            <input name="giới tính" type="radio">
-            <p>người đẹp</p>
-            <img src="https://scontent.fhan4-5.fna.fbcdn.net/v/t39.30808-6/465418117_958551656319314_2431549236809513021_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH2Ly_VZWretgBHSrVbEjQtcvZ3eNmOZBxy9nd42Y5kHHEZ06Pn4j-iMzQ4gKk6fzTnueOcALkrWWoSEKD4jD6n&_nc_ohc=u0Vy0lcNGpoQ7kNvgF6BdPr&_nc_zt=23&_nc_ht=scontent.fhan4-5.fna&_nc_gid=AgmEaLb1SOmITec_xooZO94&oh=00_AYDhoeiSuO5VAb_5_dFDkyToV42Mvx69Ns3JDiVIr2rbWQ&oe=673911B2" alt="Ảnh doraemon">
+            <input name="gender" type="radio">
+            <input name="gender" type="radio">
+            <p style="font-family: monospace;">người đẹp</p>
+            <img src="https://scontent.fhan4-5.fna.fbcdn.net/v/t39.30808-6/465418117_958551656319314_2431549236809513021_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH2Ly_VZWretgBHSrVbEjQtcvZ3eNmOZBxy9nd42Y5kHHEZ06Pn4j-iMzQ4gKk6fzTnueOcALkrWWoSEKD4jD6n&_nc_ohc=u0Vy0lcNGpoQ7kNvgF6BdPr&_nc_zt=23&_nc_ht=scontent.fhan4-5.fna&_nc_gid=AgmEaLb1SOmITec_xooZO94&oh=00_AYDhoeiSuO5VAb_5_dFDkyToV42Mvx69Ns3JDiVIr2rbWQ&oe=673911B2" alt="Ảnh doraemon" width="100" heighr="124">
             <a href="https://www.w3schools.com/html/default.asp">doraemon</a>
             <ul>
                 <li>T</li>
@@ -35,7 +51,13 @@
                 <li>F</li>
                 <li>G</li>
             </ul>
-            <table>
+            <pre>
+                tôi như là con kiến
+                trong thủ đô vội vàng
+                1000 năm văn hiến
+                1000 năm nhớ người.
+            </pre>
+            <table style="color:darkblue">
                 <thead>
                     <th>stt</th>
                     <th>name</th>
@@ -57,3 +79,16 @@
             <button>Kết thúc</button></div>
     </body>
 </html>
+<!-- 3 cách link tới css
+1.intermal:bên trong html
+2. external:bên ngoài html < tạo css bên ngoài>
+3. inline:sử dụng thuộc tính attribute viết vào trong dòng cần style
+ -->
+<!-- 
+ css selector: cách gọi element
+ ID & class 
+ ID: #
+ class: .
+ -->
+ 
+ 

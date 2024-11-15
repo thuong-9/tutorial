@@ -1,0 +1,14 @@
+#one {
+    color:rgb(0, 255, 242);
+    font-size:50px;
+}
+.two {
+    color:blueviolet;
+    font-size:20px;
+}
+li {
+    color:tomato
+}
+* {
+    color:rgb(43, 226, 67)
+}
